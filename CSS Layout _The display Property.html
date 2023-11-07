@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - The display Property</title>
+
+    <style>
+        li{
+            display: inline-block;
+         
+        }
+        a{
+            /* background-color: brown; */
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: red;
+        }
+        span{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Display : inline</h1>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Poduct</a></li>
+        <li><a href="">Staff</a></li>
+        <li><a href="">Our programs</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+    </ul>
+
+    <h1>Display : block </h1>
+
+    <span><span><b>Note:</b> </span> Setting the display property of an element only changes <span>how the element is displayed,</span> NOT what kind of element it is.</span><span>So, an inline element with display: block; <span>is not allowed to have</span> other block elements inside it.</span>
+
+</body>
+</html>

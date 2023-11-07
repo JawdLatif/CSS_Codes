@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Links</title>
+    <style>
+        a:link{
+            color: aqua;
+        }
+        a:visited{
+            color: blue;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: greenyellow;
+        }
+        a.Text_decoration{
+            text-decoration: none;
+        }
+        a.Text_decoration:hover{
+            text-decoration: underline;
+        }
+        a.background-color:hover{
+            background-color: lightgreen;
+
+        }
+        a.Button{
+            background-color: red;
+            color: whitesmoke;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block; 
+        }
+        a.Button:hover{
+            background-color: rgb(2, 75, 41);
+            color:rgb(202, 235, 228); 
+           
+                  }
+        a.one:hover{
+            text-decoration: none;
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>The four links states are:</h1>
+    <p>a:link - a normal, unvisited link</p>
+    <p>a:visited - a link the user has visited</p>
+    <p>a:hover - a link when the user mouses over it</p>
+    <p>a:active - a link the moment it is clicked</p>
+
+    <p><b><a href="https://www.cnn.com/" target="_blank">Tne CNN NEWS Link</a></b></p>
+
+    <h1>Text Decoration</h1>
+    <p>The text-decoration property is mostly used to remove underlines from links:</p>
+    <p><b><a class="Text_decoration" href="https://www.cnn.com/"target="_blank">Tne CNN NEWS Link</a></b></p>
+
+    <h1>Styling a link with background-color property</h1>
+    <p><b><a class="background-color" href="https://www.cnn.com/"target="_blank">Tne CNN NEWS Link</a></b></p>
+    <h1>Link Button</h1>
+    <p><b><a class="Button" href="https://www.cnn.com/"target="_blank"> CNN </a></b></p>
+
+    <h1>More Example:</h1>
+    <p><b><a class="one" href="https://www.cnn.com/2023/10/30/sport/lionel-messi-aitana-bonmati-ballon-dor-spt-intl/index.html"target="_blank"> Lionel Messi and Aitana Bonmatí win men’s and women’s Ballon d’Or awards </a></b></p>
+
+</body>
+</html>
