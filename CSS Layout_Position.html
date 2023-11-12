@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .static {
+            position: static;
+            border: 3px solid red;
+        }
+
+        .relative {
+            position: relative;
+            border: 3px green solid;
+            left: 40px;
+        }
+
+        .fixed {
+            position: fixed;
+            border: 3px red solid;
+            bottom: 0;
+            right: 0;
+            max-width: 300px;
+
+        }
+
+        .relative_c {
+            position: relative;
+            max-width: 300px;
+            height: 200px;
+            border: 3px blue solid;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            max-width: 200px;
+            height: 100px;
+            border: 3px red solid;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 10px;
+            padding: 5px;
+            background-color: aquamarine;
+            border: 2px red solid;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .topleft {
+            position: absolute;
+            top: 30px;
+            left: 18px;
+            font-size: 20px;
+        }
+
+        .imgong {
+            width: 100%;
+            height: 300px;
+            opacity: 0.3;
+        }
+
+        .containertwo {
+            position: relative;
+        }
+
+        .topright {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 20px;
+        }
+
+        .imgTwo {
+
+            width: 100%;
+            height: 250px;
+            opacity: 0.4;
+        }
+
+        .contarinerthree {
+            position: relative;
+        }
+
+        .bottomleft {
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+            font-size: 30px;
+        }
+
+        .imgthree {
+            width: 100%;
+            height: 250px;
+            opacity: 0.3;
+        }
+
+        .contarinerfour {
+            position: relative;
+        }
+
+        .bottomright {
+            position: absolute;
+            bottom: 20px;
+            right: 90px;
+            font-size: 30px;
+        }
+
+        .imgfour {
+            width: 100%;
+            height: 300px;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>THe position Property</h1>
+    <p>The position propety specifies the type of positioning method used for an element.</p>
+    <h2>There are five type different position values:</h2>
+    <span>1.Static</span>
+    <br>
+    <span>2.relative</span>
+    <br>
+    <span>3.fixed</span>
+    <br>
+    <span>4.absolute</span>
+    <br>
+    <span>5.sticky</span>
+    <br>
+    <h1>Position: Static;</h1>
+    <p>An element with position: static; is not positioned in any special way; it is alwyas positioned according to the
+        normal flow for the page.</p>
+
+    <div class="static">
+        This div position is static.
+    </div>
+    <br>
+    <h1>Position: Relative;</h1>
+    <p>An element with position: Relative; is positioned relative to its normal position.</p>
+    <b>Note:</b>
+    <p>Other content will not be adjusted fit into any gap left by the element.</p>
+    <div class="relative">
+        This div position is relative.
+    </div>
+
+    <br>
+    <h1>Position:fixed;</h1>
+    <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same
+        place even if the page is scrolled. </p>
+    <b>Note:</b>
+    <p>Notice the fixed element in the lower-right corner of the page.</p>
+    <div class="fixed">
+        This div position is fixed.
+    </div>
+
+    <br>
+    <h1>Position: absolute;</h1>
+    <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of
+        positioned relative to the viewport, like fixed).</p>
+
+    <Strong>Note:</Strong>
+    <br>
+    <span> However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves
+        along with page scrolling.</span>
+    <br><br>
+
+    <div class="relative_c">
+        This div element has position relative.
+        <div class="absolute">
+            This div positon is absolutes.
+        </div>
+    </div>
+
+    <br>
+    <h1>Position: Sticky ;</h1>
+    <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+    <div class="sticky">I am sticky!</div>
+    <div class="sticky_p" style="padding-bottom: 700px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at, esse pariatur error eligendi minima, dicta
+        totam debitis molestias neque possimus. Expedita laborum consectetur officia tenetur voluptatum laudantium,
+        omnis atque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam veniam, iusto aut perspiciatis natus
+        tempore, sapiente quia tempora sit fugit, expedita molestias quo? Odit ad eos veniam quo officia.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo obcaecati rerum perferendis quidem distinctio earum
+        enim et dolor, rem quibusdam ut repellat quaerat, possimus reiciendis amet ducimus, laboriosam hic mollitia.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas eligendi nisi error magni qui quaerat
+        laborum incidunt quia? Ratione aliquam non commodi consectetur. Porro molestias omnis atque quas impedit.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem tempore nulla ullam quaerat dolore molestiae nam
+        totam? Iste ut porro similique, corporis nostrum facilis sequi, commodi provident voluptates, repellat
+        doloribus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quasi quod! Fugiat odio quisquam nobis dolor id
+        quas cum? Suscipit natus accusamus animi fugit ipsum dolorem hic iure eos sint?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis est magni tempora facilis vitae sit deleniti
+        incidunt aliquid. Laudantium beatae provident eaque odio aliquid sapiente iusto deserunt ullam, illum saepe!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt maxime soluta labore quae veniam explicabo
+        atque quasi aliquam. Tempora inventore exercitationem animi officiis accusamus, repellendus maiores consequuntur
+        esse id sapiente.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis consequuntur omnis quia mollitia
+        accusantium explicabo expedita, saepe esse sit facilis quod aut illo magnam tempora aliquid veniam fugit dicta?
+        Harum!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit nam nobis cupiditate odit aperiam vel esse
+        delectus numquam eveniet quos ad commodi, veritatis voluptatibus sit illum cum optio perspiciatis
+        necessitatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere at sunt pariatur a dolore cumque. Molestias
+        eligendi ducimus repudiandae voluptatem doloremque distinctio mollitia in cumque, sapiente officiis, veniam
+        possimus?
+    </div>
+    <h1>Top Left</h1>
+    <div class="container">
+        <img class="imgong" src="./pexels-photo-583848 (1).webp" alt="photo" width="1000" height="300">
+        <div class="topleft"> Top left</div>
+    </div>
+    <br><br>
+    <h1>Top Right</h1>
+    <div class="containertwo">
+        <img class="imgTwo" src="./pexels-photo2.webp" alt="">
+        <div class="topright">Top Right</div>
+    </div>
+    <br><br><br>
+    <h1>Bottom Left</h1>
+    <div class="contarinerthree">
+        <img class="imgthree" src="./pexels-photo-3.webp" alt="">
+        <div class="bottomleft">bottom left</div>
+    </div>
+    <h1>Bottom RIght</h1>
+    <div class="contarinerfour">
+        <img class="imgfour" src="./pexels-photo-4.webp" alt="">
+        <div class="bottomright">Bottom Right</div>
+    </div>
+</body>
+
+</html>
