@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid of Boxes_Equal Width Boxes</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box1{
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+            height: 300px;
+        }
+        .cearfix ::after{
+            content: "";
+            clear: both;
+            display: table;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Grid of Boxes</h1>
+    <p>Float boxex side by side:</p>
+    <div class="cearfix">
+        <div class="box1" style="background-color: rgb(247, 247, 247);" >
+            <p>Some text inside the box.</p>
+        </div>
+        <div class="box1" style="background-color: rgb(160, 156, 156);">
+            <p>Some text inside the box.</p>
+        </div>
+        <div class="box1" style="background-color: rgb(85, 81, 81);">
+            <p>Some text inside the box.</p>
+        </div>
+    </div>
+
+    <h1>Images Side by Side</h1>
+    <p>Float images side by side:</p>
+    <div class="clearfix">
+        <div class="box1">
+            <img src="./pexels-photo-3.webp" alt="" style="width:100%">
+        </div>
+        <div class="box1">
+            <img src="./pexels-photo-3.webp" alt="" style="width:100%">
+        </div>
+        <div class="box1">
+            <img src="./pexels-photo-3.webp" alt="" style="width:100%">
+        </div>
+    </div>
+
+    <br><br>
+    <h1>Equal Height Boxes</h1>
+    <div class="clearfix">
+        <div class="box1" style="background-color: rgb(180, 178, 178);">
+            <h1>Box 1</h1>
+            <p>This the fist box</p>
+            <p>This the fist box</p>
+        </div>
+        <div class="box1" style="background-color: grey; overflow: auto;">
+            <h1>Box 2</h1>
+            <p>This is the second box</p>
+            <p>This is the second box</p>
+            <p>This is the second box</p>
+            <p>This is the second box</p>
+            <p>This is the second box</p>
+            <p>This is the second box</p>
+            <p>This is the second box</p>
+            <p>This is the second box</p>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
