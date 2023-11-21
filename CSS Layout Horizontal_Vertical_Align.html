@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Horizontal_Vertical_Align</title>
+
+    <style>
+        .center{
+            border: 2px solid red;
+            width: 250px;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .align{
+            /* position: absolute; */
+            float:right;
+            right: 35px;
+            border: 2px solid green;
+            width: 300px;
+            padding: 25px;
+            line-height: 1.5;
+            justify-content:end;
+
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Center Align Elements</h2>
+    <p>To horizontally center a block element (like div), use margin: auto;</p>
+
+    <div class="center">
+        <p>Hello World!</p>
+    </div>
+    <br>
+    <img src="./pexels-photo-3.webp" alt="">
+    <br>
+
+    <div class="align">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, aliquam quos! Delectus fugit ipsa aspernatur ab nisi voluptatibus autem doloremque, dicta facere ex culpa possimus harum, laborum a nemo ea.
+    </div>
+</body>
+</html>
