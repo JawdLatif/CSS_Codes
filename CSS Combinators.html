@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+
+    <style>
+        p{
+            border: 2px solid red;
+        }
+
+        div p{
+            background-color: yellow;
+        }
+
+        .child  > p{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descendant Selector</h1>
+    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+    <div>
+        <p>Paragraph 1 in the div</p>
+        <p>Paragraph 2 in the div</p>
+        <section><p>Paragraph 3 in the div</p></section>
+    </div>
+
+    <h2>Child Selector</h2>
+
+    <p>The child selector (>) selects all elements that are the children of a specified element.</p>
+    <div class="child">
+        <p>This paragraph is in the Child selector</p>
+        <p>This paragraph is in the Child selector</p>
+        <p>This paragraph is in the Child selector</p>
+       
+    </div>
+</body>
+</html>
