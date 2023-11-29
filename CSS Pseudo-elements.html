@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-elements</title>
+
+    <style>
+        p::first-line{
+            color: red;
+            font-variant: small-caps;
+            
+        }
+        /* p{
+            border: 3px solid green;
+            width: 400px;
+        } */
+        .one::first-line{
+            background-color: aqua;
+            text-transform: capitalize;
+           
+        }
+        P.firstLetter::first-letter{
+            color: red;
+            font-size: xx-large;
+
+        }
+
+        p#one::after{
+            /* content: url(./pexels-photo-3.webp ); */
+        }
+
+        .three::selection{
+            color: rgb(250, 248, 248);
+            background-color: rgb(166, 166, 238);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>The ::first-line Pseudo-element</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, nihil molestias. Voluptate reiciendis quae veritatis, laborum laboriosam nam rem nemo iusto, sint minima suscipit adipisci exercitationem! Corrupti illum nulla possimus?
+    </p>
+    
+    <p class="one">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio aut doloremque ullam sint est culpa. Error deserunt tenetur, nisi asperiores rem dolores atque reprehenderit, nostrum voluptates doloremque velit recusandae minima?
+
+    </p>
+    <br><br>
+    <h1>The ::first-letter Pseudo-element</h1>
+    <p class="firstLetter">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minima quam necessitatibus accusantium deserunt minus aperiam at mollitia. Accusamus minima asperiores consequatur excepturi error, voluptatem qui laboriosam impedit libero laborum.
+        Numquam inventore eius soluta, voluptatum recusandae magni consectetur eveniet possimus officiis molestiae voluptates ullam adipisci non ut quos corporis sed mollitia obcaecati tenetur. Quos accusamus debitis soluta, hic illum fuga.
+        Tenetur assumenda fugiat expedita fugit dolorem accusantium tempora quod quasi! Tempore sed molestiae, facilis eos adipisci et dolorem consectetur repellat nisi asperiores numquam id corporis dolor at explicabo rem blanditiis!
+    </p>
+
+    <h1>CSS - The ::before Pseudo-element</h1>
+
+    <p id="one">This is a heading</p>
+
+    <br><br>
+    <h1>CSS - The ::selection Pseudo-element</h1>
+    <p class="three">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aperiam recusandae veniam mollitia, aspernatur quod placeat id ipsam ipsum rem debitis quisquam quidem iusto, saepe repellendus unde. Voluptas, cupiditate error.
+        Quidem error iure fugit omnis maiores, tenetur eaque velit ea dicta praesentium sunt quisquam aliquid obcaecati dignissimos nemo itaque. Cupiditate esse libero laudantium ipsum assumenda, aut voluptatem nostrum architecto fuga!
+        Nostrum blanditiis hic quidem ab minima eveniet veritatis at sapiente facere modi, impedit exercitationem a doloremque facilis tempora odio esse voluptas! Ratione, ut facilis vel asperiores optio quibusdam enim voluptates?
+        Commodi, consequatur. Illo voluptate corrupti, numquam, sequi excepturi quae voluptates incidunt laborum sapiente quidem nostrum. Laudantium delectus eius maxime harum voluptatem. At unde asperiores voluptatibus error sequi aspernatur voluptatum! Fugit?
+        Eveniet neque asperiores possimus voluptatibus ducimus, ullam quidem facere distinctio. Aperiam earum accusamus nobis. Repellendus veritatis, sequi non eos quo corporis natus. Ea fugit repellendus ducimus illum, fugiat reiciendis perspiciatis?
+    </p>
+
+
+</body>
+</html>
